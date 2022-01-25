@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Baloo+Bhaijaan+2&family=Comfortaa&family=Concert+One&family=Dosis:wght@300&family=Genos:wght@300&family=Lato&family=Montserrat:wght@300&family=Open+Sans+Condensed:wght@700&family=Pacifico&family=Pathway+Gothic+One&family=Patrick+Hand&family=Permanent+Marker&family=Roboto+Condensed&family=Special+Elite&family=Titillium+Web:wght@200&family=Ubuntu+Condensed&family=Voltaire&display=swap');body{
+  
+    padding:0;
+    margin:0;
+    border:0;
+    background-color:rgba(10, 10, 10,0.9);
+    overflow: hidden;
+     
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 2rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+  /* LOGO of YOUtube CLone */
+  h4{
+      color:rgb(248, 246, 246);
+      font-family: 'Pathway Gothic One', sans-serif;
+      /* font-weight:bolder; */
+      font-size: 1.5rem;
+      /* padding-left:2rem; */
+      margin:0;
+      height:4rem;
+      word-spacing:0.2rem;
+      width:7rem;
+      padding-top:2rem;
+     
+      
+  }
+
+  span{
+      color:rgb(185, 55, 55);
+      font-size:1.52rem;
+  }
+
+  sup{
+    font-size: 0.6rem;
+    color:rgb(231, 228, 228);
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Comfortaa', cursive;    
+    letter-spacing:0.03rem;
+    opacity:0.7;
+    padding-bottom: 1.2rem;
+    
+
+
+  }
+
+  .icon{
+      width:4rem;
+      background-color: aqua;
+      height:4rem;
+      margin:0;
+      /* margin-left:2rem; */
+      background: url('./youtube-logo-png-2069.png');
+      background-repeat: no-repeat;
+      background-size:cover;
+     
+
+      
+
+  }
+
+  #logo{
+      flex:1;
+        display:flex;
+        /* justify-content:space-around; */
+        gap:0.1rem;
+        align-items: center;
+        height:5rem;
+        width:20rem;
+      
+  }
+
+
+  .icon img{
+      width:2rem;
+      height:2rem;
+      
+  }
+
+  .m{
+      width:2rem;
+      height:3rem;
+      margin-left:1rem;
+      
+  }
+
+  .m button{
+      width:80%;
+      height:80%;
+      background-color:rgba(10, 10, 10,0) ;
+      border:0;
+      margin-top:0.3rem;
+  }
+
+  .m button img{
+      background-color:rgba(10, 10, 10,0.0) ;
+      width:1.6rem;
+      height:1.4rem;
+      color:white;
+      opacity:0.8;
+      transition:all 0.2s ease-in-out;
+      cursor:pointer;
+  }
+
+  .m button img:hover{
+      opacity:0.98;
+      width:1.8rem;
+      height:1.4rem;
+      transition:all 0.2s ease-in-out;
+
+
+  }
+
+  /* LOGO of YT clone ends here */
+
+
+  .topnav{
+      height:4.2rem;
+      width:100vw;
+      display:flex;
+      flex-wrap:wrap;
+      flex-direction: row;
+      position:sticky;
+      top:0;
+      left:0;
+      background-color:rgba(36, 36, 36, 0.98);
+
+
+  }
+
+
+  .search{
+      flex:2;
+      display:flex;
+      align-items: center;
+      justify-content:center;
+     
+
+  }
+
+  .search .searchbar{
+      
+      width:65%;
+      height:2.3rem;
+      border:0.05rem solid rgba(68, 67, 67, 0.9) ;
+   
+      padding-left:0.5rem;
+      font-family: 'Comfortaa', cursive;
+      background-color:rgba(17, 17, 17,0.8);
+      outline:none;
+      color:beige;
+
+  }
+
+  .search .searchbutton{
+      
+      width:3rem;
+      height:2.4rem;
+      background-color:rgba(131, 126, 126, 0.3) ;
+      border:0;
+      
+  }
+
+  .searchbutton img{
+    background-color:rgba(10, 10, 10,0.0) ;
+    width:1.5rem;
+    height:1.3rem;
+    color:white;
+    opacity:0.8;
+    transition:all 0.2s ease-in-out;
+
+  }
+
+  .mic{
+    width:2.5rem;
+    height:2.4rem;
+    background-color:rgba(22, 22, 22, 0.6) ;
+    border:0;
+    border-radius: 50%;
+    margin-left:0.5rem;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+
+  }
+
+  .mic .micbutton{
+      width:60%;
+      height:60%;
+  }
+
+  .thumbnails{
+      flex:1;
+      display:flex;
+
+      justify-content:right;
+      gap:1.5rem;
+      align-items: center;
+      
+  }
+  .thumbnails img{
+      width:1.7rem;
+      height:1.65rem;
+      cursor:pointer;
+  }
+
+  .profid{
+      margin-right:2.5rem;
+      width:2.25rem;
+      height:2.25rem;
+      background-color:rgb(42, 88, 11);
+      border-radius: 50%;
+      display:flex;
+      align-items: center;
+      justify-content:center;
+      font-size:1.1rem;
+      font-family: 'Lato', sans-serif;
+      color:rgb(230, 225, 225);
+      opacity:0.95;
+      cursor:pointer;
+  }
+
+
+  /* End of the header part  */
+
+
+  /* The container of the default page begins here */
+
+
+  .container{
+      width:100vw;
+      height:calc(100% - 5.1rem);
+      /* background-color:wheat; */
+      display: flex;
+      flex-direction: row;
+      
+      
+  }
+
+  .container .leftnav{
+    height:calc(100vh - 5.05rem);
+    flex:0.5;
+    
+    background-color:rgba(36, 36, 36, 0.00);
+    position:sticky;
+    left:0;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+    /* flex-wrap: wrap; */
+
+  }
+
+  .leftnav img{
+      width:1.5rem;
+      height:1.5rem;
+      margin:1.2rem;
+      margin-bottom:0.2rem;
+      cursor: pointer;
+      
+  }
+
+  .leftnav p{
+      margin-bottom:1rem ;
+      color:whitesmoke;
+      font-size: 0.65rem;
+      margin-top:0;
+      margin-left:0.5rem;
+      margin-right:0.5rem;
+      cursor: pointer;
+      
+      padding:0;
+      
+
+  }
+
+  .container .content{
+    height:calc(100% - 5.05rem);
+    flex:9;
+    padding-bottom: 0.5rem;
+    
+    /* background-color:tomato; */
+    background-color:rgba(27, 27, 27, 0.9) ;
+    
+  }
+
+  .content .banner{
+      width:100%;
+      height:3.2rem;
+      
+      background-color:rgba(34, 33, 33, 0.9);
+      border-top:0.03rem solid rgb(51, 51, 51);
+      border-bottom:0.03rem solid rgb(51, 51,51);
+      position:sticky;
+      top:4.05rem;
+
+      display:flex;
+      /* justify-content:space-evenly; */
+      gap:0.1rem;
+      align-items:center;
+      padding:0.3rem 0.5rem;
+  }
+
+  .banner .banner_icons{
+      height:1rem;
+      /* width:2rem; */
+      
+      border-radius: 4rem;
+      padding:0.6em 0.9rem;
+      margin-left:0.9rem;
+      font-size: 0.9rem;
+      background-color:rgba(102, 99, 99, 0.4);
+      border:0.01rem solid rgba(112, 111, 111,0.4);
+      color:rgb(255, 255, 255);
+      font-family: 'Lato', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+      /* flex shrink will make it look better when downsizing windows */
+      flex-shrink: 0;  
+      cursor:pointer; 
+
+      
+      
+
+  }
+
+  .banner .banner_icons:hover{
+    background-color:rgba(170, 162, 162, 0.4);
+    transition: all 0.3s ease-in-out;
+
+  }
+
+
+  .content .videos_container{
+      height:calc(98vh - 10rem);
+      width:calc(98.9% - 1rem);
+      overflow-y:scroll;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 0.5rem;
+      grid-row-gap:0.8rem;
+      background-color:rgba(27, 27, 27, 0.9) ;
+      padding:0.5rem;
+      padding-top:0.2rem;
+      padding-left:1.8rem;
+      padding-right:0.3rem;
+      position:relative;
+      top:1rem;
+      /* bottom:1rem; */
+
+      
+      
+    
+
+
+  }
+  .videos_container div{
+      width:21rem;
+      height:20rem;
+      /* background-color:teal; */
+  }
+
+
+  .video{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction: column;
+      gap:0.1rem;
+  }
+
+  
+
+  .video .vid_thumb{
+      flex:5;
+           
+      
+  }
+
+  .video .vid_thumb:hover{
+      z-index: 1000;
+      width:25rem;
+      flex:8;
+      transition: all 0.45s ease-in;
+      border:0.15rem solid rgb(163, 156, 156);
+  }
+
+  .vid_thumb img{
+      width:100%;
+      height:100%;
+      cursor:pointer;
+  }
+
+.video .vid_title{
+    flex:0.5;
+    /* background-color:yellow; */
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    font-weight:bolder;
+    color:white;
+    font-size:1rem;
+    letter-spacing:0.05rem;
+    word-spacing: 0.1rem;
+    margin-top:0.7rem;
+    cursor:pointer;
+    
+
+}
+.video .channel_title{
+    flex:1;
+    /* background-color:violet; */
+    font-family: 'Titillium Web', sans-serif;
+    /* padding:2rem; */
+    font-size:0.87rem;
+    color:rgb(218, 212, 212);
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+  /* The container of the default page ends here */
+
+
+  /* Search results */
+
+
+  .s_results{
+
+    position: absolute;
+    width:32rem;
+    height:20rem;
+    top:4.1rem;
+    left:29rem;
+    background-color:white;
+    color:black;
+    z-index: 1500;
+    display:flex;
+    flex-direction: column;
+    gap:0.2rem;
+    /* flex-basis:2rem; */
+   
+    
+
+  }
+.s_results div{
+    display:flex;
+    align-items:center;
+    width:95%;
+    height:20%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2rem;
+    padding-left:0.5rem;
+    font-weight: bolder;
+
+    /* border:0.02rem solid rgb(0, 0, 0); */
+}
+.hidden{
+    display:none;
+}
+
+
+.searchlist_container{
+    width:100vw;
+    height:calc(100vh - 12.2rem);
+    background-color:white;
+    padding:3rem 2rem;
+    overflow-y: scroll;
+    /* display: flex;
+    flex-direction: column;
+    gap:1rem;
+    flex-wrap: nowrap; */
+    margin-bottom:1rem;
+    margin-top:2rem;
+    background-color:rgba(27, 27, 27, 0.9) ;
+
+
+}
+
+.searchlist_container > div{
+
+    width:89rem;
+    height:15rem;
+    
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    flex-direction: row;
+
+
+
+}
+
+.searchlist_container div .image{
+    flex:1;
+    height:95%;
+    margin:0;
+    
+}
+
+.image img{
+    width:100%;
+    height:100%;
+}
+.searchlist_container div .descr{
+    flex:3;
+  
+    height:95%;
+    margin:0;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:0.3rem;
+    color:white;
+}
+
+.searchlist_container div .descr .des_title{
+    flex:1.2;
+    /* height: 1.5rem; */
+    width:99.5%;
+    display: flex;
+    padding-top:0.3rem;
+    padding-left:0.4rem;
+    font-size:1.4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight:bolder;
+
+
+
+}
+.searchlist_container div .descr .des_small{
+    flex:0.6;
+    /* background-color:khaki; */
+    /* height: 1rem; */
+    width:98.5%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:0.9rem;
+    color:lavender;
+    padding:0.2rem;
+    font-weight: bolder;
+
+}
+.searchlist_container div .descr .description{
+    flex:0.8;
+    /* height: 1rem; */
+    width:98.5%;
+    
+    font-family: 'Titillium Web', sans-serif;
+    font-size:0.83rem;
+    color:rgb(196, 196, 201);
+    padding:0.4rem;
+    font-weight: bolder;
+    display:block;
+    
+
+}
+
+.searchlist_container div .descr .ic{
+    flex:1;
+    /* background-color:khaki; */
+    /* height: 1rem; */
+    width:98.5%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:0.9rem;
+    color:rgb(255, 255, 255);
+    padding:0.2rem;
+    font-weight: bolder;
+
+}
+
+.ic button{
+    width:2.5rem;
+    height:1.6rem;
+    margin-right:0.3rem;
+    margin-left:0;
+    opacity:0.58;
+    color:rgb(255, 255, 255);
+    padding:0.2rem;
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(104, 99, 99, 0.7);
+    border:0;
+}
+
+
+
+
+.searchlist_container .filters{
+    width:89rem;
+    height:2.5rem;
+    border:0;
+    border-bottom: 0.05rem solid rgb(68, 68, 68);
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-weight:bolder; */
+    color:rgb(187, 179, 179);
+    font-size:1.2rem;
+    display:flex;
+    align-items: center;
+    
+
+
+}
+
+
+.filters img{
+   
+    margin-left:0.5rem;
+    opacity:0.7;
+}
+
+.filters p{
+    margin-left:0.6rem;
+    
+}
