@@ -18,6 +18,8 @@ let container=document.getElementById("container");
 
 let searchlist_container =document.getElementById("searchlist_container");
 
+let cl=document.getElementById("c");
+
 
 
 
@@ -473,7 +475,15 @@ function fetchdata(str){
     
 }
     
+// On click of the button the Home page should come
 
+cl.addEventListener("click",function(){
+    
+    searchlist_container.classList.add("hidden");
+    container.classList.remove("hidden");
+    
+    
+});
    
 
 
