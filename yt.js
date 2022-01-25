@@ -18,7 +18,7 @@ let container=document.getElementById("container");
 
 let searchlist_container =document.getElementById("searchlist_container");
 
-let cl=document.getElementById("c");
+let cl=document.getElementById("cl");
 
 
 
