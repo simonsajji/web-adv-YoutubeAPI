@@ -1,4 +1,4 @@
-API_KEY='AIzaSyBK7Xmeyey6U4noPsadioqYPvpl6dcdEwk';
+API_KEY='AIzaSyAfW16nWnwoPqbWBKzig1bdnZGmSnqM1uE';
 
 // VIDEO-LIST HOMEPAGE BEGINS
 
